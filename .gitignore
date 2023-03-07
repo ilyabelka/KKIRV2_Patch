@@ -1,0 +1,22 @@
+
+*.dll
+*.pdb
+*.xml
+*.config
+files/\[UTILITY\] KKManager/KKManager.exe
+*.unity3d
+*.resource
+files/\[UTILITY\] KKManager/StandaloneUpdater.exe
+files/\[UTILITY\] KKManager/README.md
+files/\[UTILITY\] KKManager/ModpackTool/pngcrush_1_8_11_w64.exe
+files/\[UTILITY\] KKManager/LICENSE
+files/\[UTILITY\] KKManager/KKManager.settings
+*.txt
+files/version
+files/UserData/coordinate/kpOnsen.png
+files/UserData/coordinate/kpLiveStage.png
+files/mods/Joan6694DynamicBoneColliders.zipmod
+files/Launcher.exe
+files/BepInEx/Translation/ru/Text/RU_Translation_Text.zip
+files/BepInEx/plugins/RuntimeUnityEditor/README.md
+files/BepInEx/plugins/RuntimeUnityEditor/LICENSE

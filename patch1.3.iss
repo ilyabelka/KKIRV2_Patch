@@ -2,21 +2,20 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define NAME "KKIRV2"
-#define VERSION "R1.3"
+#define VERSION "1.3"
 
 #include "common\Header.iss"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppName=Обновление {#NAME} до версии {#VERSION}
-OutputBaseFilename={#NAME} {#VERSION}
+AppName=Обновление {#NAME} до версии R{#VERSION}
+OutputBaseFilename={#NAME} R{#VERSION}
 ;AppVerName={#MyAppName} {#MyAppVersion}
 ArchitecturesInstallIn64BitMode=x64
 CloseApplications=yes
 RestartApplications=no
 CloseApplicationsFilter=*.exe,*.dll 
-
 Compression=lzma2/ultra64
 LZMAUseSeparateProcess=yes
 LZMADictionarySize=208576
@@ -24,9 +23,7 @@ LZMANumFastBytes=273
 LZMANumBlockThreads=12
 ; Переключить на yes, если при компилаяции возникнет ошибка памяти.
 DiskSpanning=no
-
 DefaultDirName=C:\Укажите_Путь_К_Папке\KKIRV2
-
 WindowResizable=yes
 WizardStyle=modern
 WizardSizePercent=120,150
@@ -41,13 +38,14 @@ Source: "files\BepInEx\*"; DestDir: "{app}\BepInEx\"; Flags: ignoreversion creat
 Source: "files\mods\*"; DestDir: "{app}\mods\"; Flags: ignoreversion createallsubdirs recursesubdirs
 Source: "files\UserData\*"; DestDir: "{app}\UserData\"; Flags: ignoreversion createallsubdirs recursesubdirs
 Source: "files\Launcher.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "files\version"; DestDir: "{app}"; Flags: ignoreversion
+Source: "files\version"; DestDir: "{app}"; Flags: ignoreversion; Attribs: hidden
 
 [InstallDelete]
 Type: filesandordirs; Name: "{app}\[UTILITY] KKManager"
 Type: filesandordirs; Name: "{app}\Plugins"
 Type: files; Name: "{app}\\BepInEx\plugins\jim60105\KK_StudioSaveWorkspaceOrderFix.dll"
 Type: files; Name: "{app}\BepInEx\plugins\KK_Plugins\KK_RandomCharacterGenerator.dll"
+Type: files; Name: "{app}\BepInEx\plugins\BepInEx.IPALoader.dll"
 
 ; Junk
 Type: filesandordirs; Name: "{app}\BepInEx\bepinex4_backup"

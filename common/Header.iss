@@ -17,6 +17,6 @@ WizardImageStretch=yes
 WizardImageBackColor=$FFFFFF
 WizardImageFile=banner.bmp
 SetupIconFile=icon.ico
-InfoBeforeFile=R1_3.txt
+InfoBeforeFile=R1_4.txt
 
 DisableWelcomePage=no

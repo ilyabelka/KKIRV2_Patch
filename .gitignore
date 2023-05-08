@@ -34,3 +34,8 @@ files/\[UTILITY\] KKManager/UpdateSources
 files/BepInEx/config/com.deathweasel.bepinex.hcharaadjustment.cfg
 files/BepInEx/config/org.bepinex.plugins.ShaderManagementTool.cfg
 Output/KKIRV2 R1.3.exe
+*.zipmod
+files 1_4/version
+*.exe
+*.md
+files/BepInEx/plugins/IllusionFixes/LICENSE
